@@ -1,6 +1,5 @@
 package com.ssafy.ws.step3;
 
-
 public class BookTest {
 
 	public static void main(String[] args) {
@@ -39,7 +38,7 @@ public class BookTest {
 		} catch (ISBNNotFoundException e) {
 			e.printStackTrace();
 		} catch (QuantityException e) {
-			System.out.println("수량이 부족합니다.");
+			System.out.println(e.getMessage());
 		}
 		System.out.println(manager.searchByIsbn("21424"));
 	}
